@@ -92,7 +92,7 @@ public class GlobalQueue : MonoBehaviour
     {
         return
             "move (robot) (x) (y)\n" +
-            "camera (camera name)\n" +
+            "cam (camera name)\n" +
             "help\n"+ 
             "scan\n" + 
             "snap (robot)\n"+
@@ -159,7 +159,7 @@ public class GlobalQueue : MonoBehaviour
         if (objectiveTraker.ObjectiveCompleted)
         {
 
-            return "Next room...";
+            return "Thanks for playing the demo!";
         } else
         {
             return $"Must have {objectiveTraker.RequiredRobotCount} robots at the end to continue.";
